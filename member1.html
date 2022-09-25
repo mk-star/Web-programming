@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <style>
+        #title {
+            text-align : center;
+        }
+        #txt1 {
+            font-size : 25px;
+            padding-bottom : 10px;
+            text-align : center;
+            font-weight : bold;
+        }
+        table {
+            margin : auto;
+        }
+        #txt2 {
+            font-size : 13px;
+            font-weight : bold;
+        }
+        .txt3 {
+            font-size : 15px;
+            text-align : left;
+            font-weight : bold;
+            padding-right : 15px;
+        }
+        #textbox {
+            background-color : #FFFF99;
+        }
+        hr {
+            width : 1000px;
+        }
+    </style>
+</head>
+<body>
+    <form name = "frm1">
+        <div id = "title"><image src = "Image/eclass_title.jpg"></image></div>
+        <div id = "txt1" colspan = '3'>로그인</div>
+        <hr/>
+        <table>
+            <tr>
+                <td rowspan = '5'><image src = "Image/eclass_logo.png"></image></td>
+                <td colspan = '2' id = "txt2">회원님의 아이디와 비밀번호를 정확히 입력하세요.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan = '2'>
+                    <select>
+                        <option name = "type" value = 1 selected>학부생</option>
+                        <option name = "type" value = 2>대학원생</option>
+                        <option name = "type" value = 3>교직원</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class = "txt3">아이디</td>
+                <td><input type = "text" size = "20" maxlength = "15" name = "id" id = "textbox"></td>
+            </tr>
+            <tr>
+                <td class = "txt3">비밀번호</td>
+                <td><input type = "password" size = "20" maxlength = "20" name = "pwd" id = "textbox"></td>
+            </tr>
+            <tr>
+                <td colspan = '2'>
+                <input type = "button" value = "로그인">  
+                <input type = "button" value = "가입하기" onclick = "document.location = 'member2.html'">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>

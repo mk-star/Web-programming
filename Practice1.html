@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <style>
+        #title {
+            padding : 20px;
+            font-size : 25px;
+            font-weight : bold;
+            text-align : center;
+        }
+        thead th, tbody th {
+            font-size : 20px;
+            text-align : center;
+            height : 50px;
+            width : 60px;
+        }
+        table {
+            border : 1px solid black;
+            border-collapse : collapse;
+            margin : auto;
+            width : 500px;
+            height : 400px;
+        }
+        td, th {
+            border : 1px solid black;
+        }
+        .necessary {
+            background-color:#FFE08C;
+        }
+        .selection {
+            background-color : #B2CCFF;
+        }
+        .subject {
+            background-color : #BDBDBD;
+        }
+        tbody td {
+            font-size : 13px;
+            text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "title">강의시간표</div>
+    <table>
+        <thead>
+            <tr>
+                <th>2학년</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>    
+                <th>1</th>
+                <td></td>
+                <td rowspan = '2' class = "necessary">자료구조</td>
+                <td class = "necessary">네트워크</td>
+                <td></td>
+                <td class = "necessary">네트워크</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td rowspan = '2' class = "necessary">데이터베이스개론</td>
+                <td></td>
+                <td></td>
+                <td class = "selection">운영체제</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td></td>
+                <td class = "selection">운영체제</td>
+                <td></td>
+                <td rowspan = '4'>사회봉사</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td rowspan = '2' class = "selection">웹프로그래밍</td>
+                <td class = "subject">창의와감성</td>
+                <td></td>
+                <td class = "subject">창의와감성</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td></td>
+                <td></td>
+                <td rowspan = '2' class = "selection">소프트웨어프로그래밍</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> 
+        </tbody>
+    </table>
+</body>
